@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <libgen.h>
 typedef struct
 {
     int x;
@@ -19,8 +20,8 @@ void move(Point* p)
 }
 void areaAndCimcunference(Rectangle* r)
 {
-    float length =sqrt(pow((*r).p2->x - (*r).p1->x, 2) + pow((*r).p2->y - (*r).p1->y, 2));
-    float width = sqrt(pow((*r).p3->x - (*r).p1->x, 2) + pow((*r).p3->y - (*r).p1->y, 2));
+    double length =sqrt(pow((*r).p2->x - (*r).p1->x, 2) + pow((*r).p2->y - (*r).p1->y, 2));
+    double width = sqrt(pow((*r).p3->x - (*r).p1->x, 2) + pow((*r).p3->y - (*r).p1->y, 2));
     printf("Area: %f\n",  length*width);
     printf("Cimcunference: %f\n", 2*length+2*width);
 }
