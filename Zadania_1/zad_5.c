@@ -3,7 +3,7 @@ int main()
 {
     int liczba;
     printf("Wpisz dowolna liczbe dodatnia: ");
-    scanf_s("%d", &liczba);
+    scanf("%d", &liczba);
     int suma = 0;
     for (int i = 0; i <= liczba; i++)
     {
