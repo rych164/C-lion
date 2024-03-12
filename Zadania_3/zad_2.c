@@ -20,7 +20,6 @@ int main()
     scanf("%d",&length);
     int* ptr = malloc((length * width) * sizeof(int));
 
-    /* Putting 1 to 12 in the 1D array in a sequence */
     for (int i = 0; i < length * width; i++)
         ptr[i] = generateRandomInt(0,100);
 
