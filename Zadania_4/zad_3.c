@@ -40,7 +40,7 @@ int main(){
     {
         array[i]=i;
     }
-    permute(array,array[0],array[len-1]);
+    permute(array,0,len-1);
     return 0;
 }
 //
