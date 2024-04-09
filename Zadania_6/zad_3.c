@@ -1,6 +1,5 @@
-#import <stdio.h>
-#import <stdlib.h>
-
+#import "stdlib.h"
+#import "stdio.h"
 void add(int a,int b)
 {
     printf("result of function add %d",a+b);
@@ -21,11 +20,11 @@ int main()
     int choose;
     int num1, num2;
     printf("Insert int:");
-    scanf_s("%d",&num1);
+    scanf("%d",&num1);
     printf("Insert int:");
-    scanf_s("%d",&num2);
+    scanf("%d",&num2);
     printf("Choose operation:");
-    scanf_s("%d",&choose);
+    scanf("%d",&choose);
     void (*pointerToFunc) (int,int);
     switch(choose)
     {
