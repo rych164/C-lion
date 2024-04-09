@@ -21,11 +21,11 @@ int main()
     int choose;
     int num1, num2;
     printf("Insert int:");
-    scanf("%d",&num1);
+    scanf_s("%d",&num1);
     printf("Insert int:");
-    scanf("%d",&num2);
+    scanf_s("%d",&num2);
     printf("Choose operation:");
-    scanf("%d",&choose);
+    scanf_s("%d",&choose);
     void (*pointerToFunc) (int,int);
     switch(choose)
     {
