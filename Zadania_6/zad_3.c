@@ -1,5 +1,5 @@
-#import "stdlib.h"
-#import "stdio.h"
+#include  "stdlib.h"
+#include "stdio.h"
 void add(int a,int b)
 {
     printf("result of function add %d",a+b);
